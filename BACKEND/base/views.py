@@ -4,4 +4,8 @@ from rest_framework.response import Response
 
 @api_view(['GET'])
 def index(request):
-    return Response({'msg': 'test'})
+    return Response({'msg': 'axios works'})
+
+@api_view(['GET'])
+def loginInfo(request):
+    return Response({'msg': 'logged in'})
